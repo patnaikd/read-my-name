@@ -45,12 +45,12 @@ function App() {
           sx={{ marginBottom: 3 }}
         />
         <TableContainer component={Paper}>
-          <Table>
+          <Table size="small">
             <TableHead>
               <TableRow>
-                <TableCell align="center">Letter</TableCell>
-                <TableCell align="center">NATO</TableCell>
-                <TableCell align="center">Police</TableCell>
+                <TableCell align="center" sx={{ backgroundColor: theme.palette.primary.main, color: '#fff' }}>Letter</TableCell>
+                <TableCell align="center" sx={{ backgroundColor: theme.palette.primary.main, color: '#fff' }}>Police</TableCell>
+                <TableCell align="center" sx={{ backgroundColor: theme.palette.primary.main, color: '#fff' }}>NATO</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -61,8 +61,8 @@ function App() {
                 return (
                   <TableRow key={index}>
                     <TableCell align="center">{upper}</TableCell>
-                    <TableCell align="center">{natoMapped}</TableCell>
                     <TableCell align="center">{policeMapped}</TableCell>
+                    <TableCell align="center">{natoMapped}</TableCell>
                   </TableRow>
                 );
               })}
